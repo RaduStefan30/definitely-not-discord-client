@@ -11,7 +11,7 @@ let socket;
 
 export const connectSocketServer = (userData) => {
   const { token } = userData;
-  socket = io("http://localhost:5002", {
+  socket = io("https://definitely-not-discord-server.onrender.com", {
     auth: { token },
   });
 

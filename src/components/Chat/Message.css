@@ -1,6 +1,7 @@
 .message {
   font-size: 1.6rem;
   padding: 2rem 4rem;
+  margin-top: 1rem;
 }
 .message--left {
   background-color: #888;
@@ -41,4 +42,28 @@
 }
 
 .message__date {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #5c0029;
+  padding: 2rem;
+  position: relative;
+}
+
+.message__date::before,
+.message__date::after {
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  background: #5c0029;
+}
+
+.message__date::before {
+  left: 0;
+}
+
+.message__date::after {
+  right: 0;
 }

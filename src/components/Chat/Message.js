@@ -8,11 +8,11 @@ const Message = (props) => {
 
   return (
     <Fragment>
-      <div className="message__date">
-        {message.date && !message.sameDate && (
+      {message.date && !message.sameDate && (
+        <div className="message__date">
           <Moment format="DD MMM YYYY">{message.date}</Moment>
-        )}
-      </div>
+        </div>
+      )}
       <div
         className={
           chatUser === message.username
@@ -20,7 +20,6 @@ const Message = (props) => {
             : "message message--right"
         }
       >
-        {(!message.sameSender || !message.sameDate) && message.username}
         {message.content}
       </div>
     </Fragment>

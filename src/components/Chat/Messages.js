@@ -6,10 +6,10 @@ import Message from "./Message";
 const Messages = () => {
   const { chatDetails, chatMessages } = useSelector((state) => state.chat);
   return (
-    <div className="messages__container">
-      {chatDetails &&
-        chatMessages &&
-        chatMessages.map((message) => {
+    chatDetails &&
+    chatMessages && (
+      <div className="messages__container">
+        {chatMessages.map((message) => {
           return (
             <Message
               chatUser={chatDetails.username}
@@ -18,8 +18,8 @@ const Messages = () => {
             />
           );
         })}
-    </div>
+      </div>
+    )
   );
 };
-
 export default Messages;

@@ -30,6 +30,7 @@ const Chat = () => {
       {chatDetails && (
         <form className="chat__form" onSubmit={(e) => handleMessage(e)}>
           <input
+            autoFocus
             className="chat__input"
             type="text"
             value={message}

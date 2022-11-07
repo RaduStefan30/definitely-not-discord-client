@@ -1,6 +1,7 @@
 .chat {
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: 0.1fr 7fr 1.2fr;
+  gap: 3rem;
 }
 
 .chat__heading {
@@ -8,6 +9,7 @@
   font-size: 3rem;
   padding: 2rem 4rem;
   font-weight: 400;
+  color: #5c0029;
 }
 
 .chat__form {

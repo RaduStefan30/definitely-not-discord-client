@@ -6,10 +6,9 @@ import { Login, Register, Dashboard, Landing } from "./pages";
 function App() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/landing" element={<Landing />} />
+      <Route path="*" element={<Login />} />
     </Routes>
   );
 }

@@ -5,6 +5,7 @@ import { store } from "./store/store";
 import App from "./App";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
+import "./queries.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

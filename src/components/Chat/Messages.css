@@ -4,7 +4,8 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   outline: 1px solid #999;
   outline-offset: 2rem;
   border-radius: 0.5rem;

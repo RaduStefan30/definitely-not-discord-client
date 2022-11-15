@@ -1,0 +1,18 @@
+@media screen and (max-width: 62.5em) {
+  .entry__container {
+    grid-template-columns: 1fr;
+    background: #fbfef9;
+  }
+
+  .entry__img-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .entry__container {
+    width: 110vw;
+    height: 100vh;
+    background: rgba(251, 254, 249, 0.9);
+  }
+}
